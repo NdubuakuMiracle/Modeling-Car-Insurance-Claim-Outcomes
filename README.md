@@ -8,19 +8,30 @@ On the Road Car Insurance has approached us to develop a predictive model to det
 
 ## Dataset Description  
 
-The dataset provided for this project is named `car_insurance.csv`. Below is a table detailing the column names and their descriptions:  
+The dataset provided for this project is a CSV file named `car_insurance.csv`. It contains various attributes about clients that may influence their likelihood of making an insurance claim.  
 
-| Column Name         | Description                                               |  
+### Column Descriptions  
+
+| Column Name          | Description                                               |  
 |---------------------|-----------------------------------------------------------|  
-| `customer_id`       | Unique identifier for each customer                       |  
-| `age`               | Age of the customer                                       |  
-| `gender`            | Gender of the customer (male/female)                     |  
-| `car_age`           | Age of the car                                           |  
-| `car_value`         | Estimated value of the car                                |  
-| `annual_mileage`    | Estimated annual mileage driven by the customer           |  
-| `previous_claims`   | Number of previous claims made by the customer            |  
-| `policy_duration`    | Duration of the insurance policy in years                 |  
-| `claim`             | Target variable indicating whether a claim was made (1=yes, 0=no) |  
+| `id`                | Unique client identifier                                  |  
+| `age`               | Client's age (0: 16-25, 1: 26-39, 2: 40-64, 3: 65+)     |  
+| `gender`            | Client's gender (0: Female, 1: Male)                     |  
+| `driving_experience`| Years of driving experience (0: 0-9, 1: 10-19, 2: 20-29, 3: 30+) |  
+| `education`         | Client's education level (0: No education, 1: High school, 2: University) |  
+| `income`            | Client's income level (0: Poverty, 1: Working class, 2: Middle class, 3: Upper class) |  
+| `credit_score`      | Client's credit score (between 0 and 1)                  |  
+| `vehicle_ownership` | Vehicle ownership status (0: Paying off finance, 1: Owns vehicle) |  
+| `vehicle_year`      | Vehicle registration year (0: Before 2015, 1: 2015 or later) |  
+| `married`           | Marital status (0: Not married, 1: Married)              |  
+| `children`          | Number of children                                       |  
+| `postal_code`       | Client's postal code                                     |  
+| `annual_mileage`    | Miles driven annually                                     |  
+| `vehicle_type`      | Type of car (0: Sedan, 1: Sports car)                    |  
+| `speeding_violations`| Total speeding violations                                   |  
+| `duis`              | Times caught driving under the influence                  |  
+| `past_accidents`    | Previous accidents involved                               |  
+| `outcome`           | Target variable indicating claims (0: No claim, 1: Claim) |  
 
 ## Objectives  
 
